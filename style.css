@@ -1,0 +1,93 @@
+/* Apply a modern font family to the whole page */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the form container */
+  #searchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+  }
+  
+  /* Style the input field */
+  #search {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  /* Style the submit button */
+  button[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Style the delete button */
+  #delete {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for buttons */
+  button:hover {
+    background-color: #555;
+  }
+  
+  /* Responsiveness */
+  /* adjusts form and results based on screen size of desktop or mobile device */
+  @media (max-width: 768px) {
+    #searchForm {
+      flex-direction: column;
+    }
+    #search {
+      margin-right: 0;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    button {
+      width: 100%;
+    }
+  }
+
+  #results {
+    /* Set the position property to absolute */
+    position: absolute;
+    /* Set the top property to 100% to position it below the form */
+    top: 50%%;
+    /* Set the left property to 0 to align it with the form */
+    left: 0;
+    /* Set the width property to 100% to make it stretch to the full width of its parent */
+    width: 100%;
+    /* Set some padding to add some space between the container and its contents */
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  
